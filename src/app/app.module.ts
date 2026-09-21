@@ -5,14 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuPrincipalComponent } from './menu-principal/menu-principal.component';
 import { PortafolioAComponent } from './portafolio-a/portafolio-a.component';
-import { PortafolioLComponent } from './portafolio-l/portafolio-l.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuPrincipalComponent,
-    PortafolioAComponent,
-    PortafolioLComponent
+    PortafolioAComponent
   ],
   imports: [
     BrowserModule,
