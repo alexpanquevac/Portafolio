@@ -1,0 +1,69 @@
+<section class="hero">
+  <div class="contenedor">
+    <p class="hero-antetitulo">Desarrollador Full Stack</p>
+    <h1 class="hero-titulo">Alexander <span class="hero-titulo-acento">Panqueva</span></h1>
+    <p class="hero-lead">
+      Más de <strong>7 años de experiencia</strong> creando aplicaciones completas:
+      interfaces modernas con <strong>Angular</strong>, lógica de negocio en <strong>Java</strong>
+      y <strong>bases de datos</strong> bien planteadas.
+    </p>
+    <div class="hero-acciones">
+      <a class="btn btn--acento" routerLink="/PortafolioA">Ver proyectos</a>
+      <a class="btn btn--linea" href="#contacto">Hablemos</a>
+    </div>
+    <div class="hero-etiquetas" aria-label="Tecnologías principales">
+      <span class="etiqueta">Angular</span>
+      <span class="etiqueta">Java</span>
+      <span class="etiqueta">Bases de datos</span>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="stack">
+  <div class="contenedor">
+    <h2 class="seccion-titulo">Lo que sé hacer</h2>
+    <p class="seccion-lema">Tres pilares cubren de punta a punta el desarrollo de un producto: la interfaz, el servidor y los datos.</p>
+    <div class="rejilla-tecnologias">
+      @for (tecnologia of tecnologias; track tecnologia.nombre) {
+        <article class="tarjeta-tecnologia">
+          <span [class]="tecnologia.clase" aria-hidden="true">{{ tecnologia.inicial }}</span>
+          <h3>{{ tecnologia.nombre }}</h3>
+          <p>{{ tecnologia.descripcion }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="seccion seccion--blanca" id="cualidades">
+  <div class="contenedor">
+    <h2 class="seccion-titulo">Cómo trabajo</h2>
+    <p class="seccion-lema">Más allá del código, estas son las cualidades que valoran los equipos de desarrollo.</p>
+    <ul class="lista-cualidades">
+      @for (cualidad of cualidades; track cualidad.num) {
+        <li class="cualidad">
+          <span class="cualidad-num" aria-hidden="true">{{ cualidad.num }}</span>
+          <div>
+            <h3 class="cualidad-titulo">{{ cualidad.titulo }}</h3>
+            <p class="cualidad-texto">{{ cualidad.texto }}</p>
+          </div>
+        </li>
+      }
+    </ul>
+  </div>
+</section>
+
+<section class="seccion seccion-oscura" id="contacto">
+  <div class="contenedor">
+    <h2 class="seccion-titulo">¿Hablamos?</h2>
+    <p class="seccion-lema">Estoy abierto a nuevas oportunidades y proyectos. Si buscas a alguien que entregue código sólido y trabaje bien en equipo, escríbeme.</p>
+    <!-- TODO: reemplazar "tucorreo@ejemplo.com" con el correo real -->
+    <a class="btn btn--acento" href="mailto:tucorreo@ejemplo.com">Enviar un correo</a>
+  </div>
+</section>
+
+<footer class="pie-pagina">
+  <div class="contenedor">
+    <p>© {{ anio }} Alexander Panqueva · Desarrollador Full Stack</p>
+  </div>
+</footer>

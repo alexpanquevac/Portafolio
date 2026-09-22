@@ -1,0 +1,49 @@
+.hero {
+  background: radial-gradient(1100px 480px at 88% -15%, rgb(88 163 186 / 22%), transparent 62%),
+    var(--c-oscuro);
+  color: var(--c-texto-inverso);
+  padding-block: clamp(4rem, 10vw, 7rem);
+}
+
+.hero-antetitulo {
+  color: var(--c-acento);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+.hero-titulo {
+  color: var(--c-texto-inverso);
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  letter-spacing: -0.01em;
+  margin: 0 0 1rem;
+}
+
+.hero-titulo-acento {
+  background: linear-gradient(90deg, #58a3ba, #a5e3f3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-lead {
+  color: rgb(248 250 252 / 85%);
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  margin: 0 0 2rem;
+  max-width: 62ch;
+}
+
+.hero-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
